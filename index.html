@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Gerador de Senhas - JHAB Dev</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <img src="/images/key_.png" alt="key-img" class="key-img" />
+        <div class="box-title">
+          <h1 class="title">Gerador de Senhas</h1>
+          <p class="subtitle">Crie senhas personalizadas, fortes e seguras.</p>
+        </div>
+      </section>
+
+      <section class="box">
+        <div class="password-box">
+          <div class="text">
+            <input type="text" name="password" id="password" readonly />
+          </div>
+
+          <div class="actions">
+            <button id="copy2">
+              <img src="/images/copy.png" alt="copy-image" />
+            </button>
+
+            <button id="refresh">
+              <img
+                src="/images/renewable.png"
+                alt="copy-image"
+                class="refresh-image"
+              />
+            </button>
+          </div>
+
+          <img src="/images/slide.png" class="slide" />
+        </div>
+        <div class="indicator">
+          <div id="indicator-bar" class="bar safe" style="width: 100%"></div>
+        </div>
+      </section>
+
+      <section class="box customize">
+        <h3 class="title">Persolanizar</h3>
+
+        <div class="actions">
+          <div class="password-lenght">
+            <p>
+              Quantidade: <span id="password-lenght-text">16</span> caracteres
+            </p>
+
+            <input
+              class="slider"
+              type="range"
+              name="password-lenght"
+              id="password-lenght"
+              value="16"
+              min="4"
+              max="64"
+            />
+          </div>
+
+          <div class="config">
+            <label class="checkbox-container">
+              <span class="text">Maiúsculas</span>
+              <input type="checkbox" id="uppercase-check" checked />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox-container">
+              <span class="text">Números</span>
+              <input type="checkbox" id="numbers-check" checked />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox-container">
+              <span class="text">Especial</span>
+              <input type="checkbox" id="symbols-check" checked />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <div class="copy-btn">
+        <button id="copy">Copiar senha</button>
+      </div>
+    </main>
+
+    <div id="toast" class="toast">
+      <p>Senha copiada!</p>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
