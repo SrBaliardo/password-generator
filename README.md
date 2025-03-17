@@ -16,7 +16,7 @@ Choose between 4 and 64 characters, including capital letters, numbers and speci
 
 You can also check the quality of your password security with a visual quantifier, each personalization having its own percentage weight in password security.
 
-<img align="center" alt="gif" height="auto" width="500" src="src/images/gif/animation_password-generator.gif">
+<img align="center" alt="gif" height="auto" width="500" src="images/gif/animation_password-generator.gif">
 <br>
 
 You can view the project via the link: <br>
